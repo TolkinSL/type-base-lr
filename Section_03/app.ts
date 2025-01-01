@@ -1,8 +1,13 @@
-let revenue: number = 1000;
-let bonus: number = 500;
+function getFullName(firstName: string, surName: string): string {
+  return `${firstName} - ${surName}`;
+}
 
-let nameUser: string = 'Vany';
-let isWork: boolean = true;
+const getFullNameArrow = (firstName, surName) => {
+  if (typeof firstName !== 'string') {
+    throw new Error('Ошибка !!!!');
+  }
+  return `${firstName} -> ${surName}`;
+};
 
-let res: number = revenue + bonus;
-console.log(res);
+console.log(getFullName('Vasia', 'Ivanov'));
+console.log(getFullNameArrow(true, false));
