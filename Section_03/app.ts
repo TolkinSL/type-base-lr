@@ -1,13 +1,19 @@
-function getFullName(firstName: string, surName: string): string {
-  return `${firstName} - ${surName}`;
+function getFullName(userData: {
+  firstName: string;
+  surName: string;
+  age: number;
+}): string {
+  return `${userData.firstName} ${userData.surName}: ${userData.age}`;
 }
 
-const getFullNameArrow = (firstName, surName) => {
-  if (typeof firstName !== 'string') {
-    throw new Error('Ошибка !!!!');
-  }
-  return `${firstName} -> ${surName}`;
+const myUser = {
+  firstName: 'Vasia',
+  surName: 'Ivanov',
+  city: 'Moscow',
+  age: 37,
+  skills: {
+    dev: true,
+  },
 };
 
-console.log(getFullName('Vasia', 'Ivanov'));
-console.log(getFullNameArrow(true, false));
+console.log(getFullName(myUser));
