@@ -4,3 +4,8 @@ mySkills.push('Test');
 console.log(mySkills);
 const [id, skillName] = mySkills;
 console.log(id + ' ' + skillName);
+const arrSkills = [1, 'DevOps', true, false];
+const readonlyTuple = [1, 'Php'];
+// readonlyTuple[0] = 2;
+// readonlyTuple.push('Azz');
+const readonlyArr1 = ['1a', '2b'];
