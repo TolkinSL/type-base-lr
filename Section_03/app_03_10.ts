@@ -1,7 +1,7 @@
 enum StatusCode {
   Success = 1,
   Work = 2,
-  Fail = 3,
+  Fail = 'f',
 }
 
 const serverResponse = {
@@ -13,7 +13,7 @@ const myFunc = (status: StatusCode) => {
   console.log(status);
 };
 
-myFunc(1);
+myFunc(2);
 
 if (serverResponse.code === StatusCode.Success) {
   console.log('Операция прошла успешно');

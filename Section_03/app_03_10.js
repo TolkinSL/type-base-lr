@@ -3,7 +3,7 @@ var StatusCode;
 (function (StatusCode) {
     StatusCode[StatusCode["Success"] = 1] = "Success";
     StatusCode[StatusCode["Work"] = 2] = "Work";
-    StatusCode[StatusCode["Fail"] = 3] = "Fail";
+    StatusCode["Fail"] = "f";
 })(StatusCode || (StatusCode = {}));
 const serverResponse = {
     message: 'Транзакция проведена',
@@ -12,7 +12,7 @@ const serverResponse = {
 const myFunc = (status) => {
     console.log(status);
 };
-myFunc(1);
+myFunc(2);
 if (serverResponse.code === StatusCode.Success) {
     console.log('Операция прошла успешно');
 }
