@@ -56,11 +56,9 @@ const rawIn2 = `{
     }
 }`;
 
+//Testing data
 const in1: ResponseSuccess | ResponseFailed = JSON.parse(rawIn1);
 const in2: ResponseSuccess | ResponseFailed = JSON.parse(rawIn2);
-//Testing data
-const getData1: ResponseSuccess | ResponseFailed = in1;
-const getData2: ResponseSuccess | ResponseFailed = in2;
 
 console.log(in1.status);
 console.log(in2.status);
