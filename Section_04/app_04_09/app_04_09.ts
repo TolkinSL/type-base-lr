@@ -34,3 +34,13 @@ const user09: { s: string[] } = {
 
 skills.forEach((item) => user09.s.push(item));
 console.log(user09);
+
+type MyTest = () => void;
+
+const testNumber: MyTest = () => {
+  return 2;
+};
+
+const b = testNumber();
+
+console.log(b);
